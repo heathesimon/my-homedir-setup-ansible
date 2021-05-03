@@ -24,6 +24,7 @@
       - docker
       - transmission
     state: present
+    accept_external_apps: True
 
 - name: Installing apps through homebrew
   community.general.homebrew:

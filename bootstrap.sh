@@ -13,11 +13,9 @@ brew install python3
 
 # Install ansible
 brew install ansible
-#brew install ansible@2.9
-#brew link --overwrite ansible@2.9
 
 #Create .ansible.cfg in home directory
-touch ~.ansible.cfg
+touch ~/.ansible.cfg
 
 # Run ansible playbook
 ansible-playbook homedir.yml --connection=local
