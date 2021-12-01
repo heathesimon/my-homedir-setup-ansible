@@ -19,7 +19,6 @@
       - postman
       - vlc
       - fantastical
-      - zoom
       - amazon-chime
       - docker
       - transmission
@@ -43,12 +42,12 @@
       - nodejs
     state: present
 
-- name: Install apps from the App Store
-  community.general.mas:
-    id:
-      - 1176895641 # spark
-      - 419330170  # moom
-      - 1419729466 # namecheap vpn
+#- name: Install apps from the App Store
+ #community.general.mas:
+  #  id:
+     # - 1176895641 # spark
+     # - 419330170  # moom
+     # - 1419729466 # namecheap vpn
 
 - name: Allowing openconnecto to run as root without a password
   become: yes
